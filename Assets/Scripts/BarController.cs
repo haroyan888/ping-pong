@@ -22,12 +22,12 @@ public class BarController : MonoBehaviour
         // 前に移動
         if (Input.GetKey(KeyCode.UpArrow) && this.movableRange["max"].y >= this.transform.position.y)
         {
-            this.transform.Translate(0.0f, 0.1f, 0.0f);
+            transform.Translate(0.0f, 0.1f, 0.0f);
         }
         // 後ろに移動
         if (Input.GetKey(KeyCode.DownArrow) && this.movableRange["min"].y <= this.transform.position.y)
         {
-            this.transform.Translate(0.0f, -0.1f, 0.0f);
+            transform.Translate(0.0f, -0.1f, 0.0f);
         }
     }
 }
